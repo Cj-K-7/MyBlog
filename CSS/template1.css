@@ -1,0 +1,81 @@
+section.template1{
+    width: 80%;
+    height: calc(100vh - 250px);
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+section.template1 .titlePart{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.template1 .titlePart::after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 5px;
+    height: 80%;
+    background-color: var(--white);
+}
+section.template1 .titlePart .title{
+    width: 50%;
+    margin: 0px;
+    font-size: 3em;
+}
+section.template1 .titlePart .subtitle{
+    width: 47%;
+    opacity: 0.5;
+    margin: 0px;
+}
+section.template1 .titlePart .uploadDay{
+    width: 47%;
+    opacity: 0.5;
+    margin: 0px;
+}
+section.template1 .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.template1 .contents p{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4em;
+}
+
+@media (max-width: 1000px) {
+    section.template1{
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    section.template1 .titlePart::after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 5px;
+        background-color: var(--white);
+    }
+    section.template1 .titlePart .title{
+        width: 100%;
+        margin: 5px;
+        font-size: 3em;
+    }
+    section.template1 .titlePart .subtitle{
+        width: 100%;
+    }
+   section.template1 .titlePart .uploadDay{
+        position: absolute;
+        width: fit-content;
+        right: 5px;
+    }
+}
