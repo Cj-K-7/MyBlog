@@ -5,47 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <script defer src="index.js"></script>
+    <script defer src="JS/router.js"></script>
+    <script defer src="JS/navbar.js"></script>
     <title>CJ-K's Blog</title>
 </head>
 
 <body>
 
     <header class="page-header">
-        <h1>CJ's BLOG</h1>
-        <h2> 경험과 지식 </h2>
+        <div class="header-title">
+            <h1>CJ's BLOG</h1>
+            <h2> 경험과 지식 </h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/" onclick="route()">Home</a></li>
+                <li><a href="/about" onclick="route()">About</a></li>
+                <li><a href="/contact" onclick="route()">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="template2">
-            <div class="titlePart">
-                <h1 class="title">Title</h1>
-                <h2 class="subtitle">SubTitle</h2>
-                <h3 class="uploadDay">day</h3>
-            </div>
-            <div class="contents">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla vitae iste laudantium necessitatibus
-                    minus eligendi reprehenderit, odit illum, tempora, possimus id quibusdam nam ut molestias quaerat
-                    nostrum assumenda aliquid! Quos.</p>
-            </div>
-        </section>
-        <section class="template1">
-            <div class="titlePart">
-                <h1 class="title">Title</h1>
-                <h2 class="subtitle">SubTitle</h2>
-                <h3 class="uploadDay">day</h3>
-            </div>
-            <div class="contents">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima magni aspernatur, repellat
-                    corporis earum. Ad expedita hic autem nostrum labore architecto cumque amet magnam. Dignissimos et
-                    distinctio veniam fugit?</p>
-            </div>
-        </section>
+    <main class="root">
     </main>
 
     <footer></footer>
-
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 section.template2{
-    width: 80%;
+    width: 80vw;
     height: calc(100vh - 250px);
+    min-height: 500px;
     display: grid;
     grid-template-columns: 75% 25%;
 }
@@ -21,7 +22,7 @@ section.template2 .titlePart::after{
     left: 0px;
     width: 5px;
     height: 80%;
-    background-color: var(--white);
+    background-color: var(--black);
 }
 section.template2 .titlePart .title{
     width: 70%;
@@ -59,13 +60,16 @@ section.template2 .contents p{
         display: flex;
         flex-direction: column;
     }
+    section.template2 .titlePart{
+        margin-bottom: 26px;
+    }
     section.template2 .titlePart::after{
         content: "";
         position: absolute;
         bottom: -10px;
         width: 100%;
-        height: 5px;
-        background-color: var(--white);
+        height: 2px;
+        background-color: var(--black);
     }
     section.template2 .titlePart .title{
         width: 100%;

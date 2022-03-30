@@ -1,9 +1,9 @@
-const newPost = ({ subject, templateStyle, imageSrc=null }) => {
+const newPost = ({ subject, templateStyle, imageSrc = null }) => {
   //make section
   const template = document.createElement("section");
   template.classList.add(`${templateStyle}`);
 
-//make div
+  //make div
 
   //make title
   const title = document.createElement("h1");
@@ -19,10 +19,11 @@ const newPost = ({ subject, templateStyle, imageSrc=null }) => {
   const uploadDay = document.createElement("h3");
   uploadDay.classList.add(`uploadDay`);
   uploadDay.innerText = subject.uploadDay;
-
+  
   //append childs
   template.appendChild(title);
   template.appendChild(subtitle);
   template.appendChild(uploadDay);
-  if(imageSrc){}
+  if (imageSrc) {
+  }
 };
